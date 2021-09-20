@@ -14,7 +14,6 @@ router.post("/", async (req, res) => {
     }
 }) 
 
-//UPDATE POST
 
 router.put("/:id", async (req, res) => {
     try {
@@ -27,8 +26,8 @@ router.put("/:id", async (req, res) => {
                 }, { new: true }
                 );
                 res.status(200).json(updatedPost);
-           } catch (err) {
-                res.status(500).json(err);
+           } catch (error) {
+                res.status(500).json(error);
         }
         } else {
             res.status(401).json("You can update only your post")
