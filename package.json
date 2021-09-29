@@ -15,7 +15,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon index"
+    "start": "nodemon index",
+    "server": "nodemon index --ignore client"
+
   },
   "author": "Jaman Dedy, Gilles Kagarama <jeandedieuam@gmail.com>",
   "license": "ISC"
