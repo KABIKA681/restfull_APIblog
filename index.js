@@ -17,7 +17,6 @@ app.use("/images", express.static(path.join(__dirname, "/images")))
 mongoose.connect(process.env.MONGO_URL, {
    
     useUnifiedTopology: true,
-    useFindAndModify: true,
    
 })
 
@@ -44,6 +43,6 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-app.listen("3001", () => {
-    console.log("Backend is running on port 3000...");
+app.listen("5000", () => {
+    console.log("Backend is running on port 3004...");
 })
