@@ -43,6 +43,6 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-app.listen("5000", () => {
+app.listen("3004", () => {
     console.log("Backend is running on port 3004...");
 })
